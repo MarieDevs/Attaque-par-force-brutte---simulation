@@ -13,7 +13,7 @@ letter = string.printable[:5]
 for length in range(1,6):
     for combo in itertools.product(letter, repeat = length):
         passworld = "".join(combo)
-        with open (FICHIER, "a") as f:
+        with open (FICHIER, "w") as f:
             f.write(passworld)
             f.write("\n")
 
